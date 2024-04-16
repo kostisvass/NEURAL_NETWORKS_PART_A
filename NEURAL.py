@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Διάβασμα του αρχείου CSV με επιλεγμένα πεδία
 selected_columns = ["date_min", "date_max", "text", "date_circa", "id" ,"region_sub_id"]  # Προσθήκη του πεδίου date_circa
-df = pd.read_csv("mytrycsv.csv", usecols=selected_columns, encoding="ISO-8859-1")
+df = pd.read_csv("iphi2802.csv", usecols=selected_columns, encoding="ISO-8859-1")
 
 # Μετατροπή του πεδίου κειμένου σε διανυσματική μορφή TF-IDF
 vectorizer = TfidfVectorizer(max_features=1000)
